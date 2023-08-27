@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Fee Subbmission</title>
+</head>
+<body>
+    <header>
+        <div id="hdlogo">
+            <img src="BlazeForgeLogod.png" alt="BlazeForgeLogo">
+            <div>
+                <h1 style="color:white;letter-spacing: 2px;line-height:25px;">BLAZ</h2>
+                <h1 style="color:#ffde59">FORG</h2>
+            </div>
+                <h1 style="color:#ffde59;font-size:70px;padding-bottom:5px;">E</h2>
+        </div>
+
+        <h2 style="color: white;">Demo Class</h2>
+    </header>
+
+    
+    <main>
+        <form action="" method="post">
+            <div class="form">
+                <label for="">Name: </label>
+                <input class="input" placeholder="Full Name" required="1" type="text">
+                <span class="input-border"></span>
+            </div>
+            <div class="form">
+                <label for="">Email: </label>
+                <input class="input" placeholder="abc@email.com" required="1" type="email">
+                <span class="input-border"></span>
+            </div>
+            <div class="form">
+                <label for="">Phone No.: </label>
+                <input class="input" placeholder="+91 XX XXXX XXXX" required="1" type="tel" maxlength="10" minlength="10">
+                <span class="input-border"></span>
+            </div>
+            <div class="form">
+                <label for="">Collage / School: </label>
+                <input class="input" placeholder="Institution name" required="1" type="text" list="batch">
+                <span class="input-border"></span>
+            </div>
+            <div class="form">
+                <label for="">Cource: </label>
+                <input class="input" placeholder="Select Cource" required="1" type="text" list="cource">
+                <span class="input-border"></span>
+            </div>
+            <datalist id="cource">
+                <option value="B.Tech CSE"></option>
+                <option value="BCA"></option>
+                <option value="BSc. IT"></option>
+                <option value="C++ Programming"></option>
+                <option value="C++ Advance"></option>
+            </datalist>
+            <div class="form">
+                <label for="">Semester: </label>
+                <input class="input" placeholder="Enter Sem" required="1" type="text" list="batch">
+                <span class="input-border"></span>
+            </div>
+            <button class="j" type="submit" >Submit</button>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
