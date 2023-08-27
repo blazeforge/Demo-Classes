@@ -5,49 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
-
-    <title>Fee Subbmission</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Demo Classes</title>
 </head>
+
+<!--https://docs.google.com/forms/d/e/1FAIpQLSdtS0-8ObgmdPmQaxGi7-bAqWRcbLIK7VsUlVHzNvHUNAVxNw/viewform
+    ?usp=pp_url&
+    entry.645356958=Kunal&
+    entry.612888622=email@xyz.com&
+    entry.630828771=1234567890&
+    entry.1732183762=abc&
+    entry.961395769=xyz&
+    entry.62621715=1
+-->
+
+<script>
+    var subbmited=false;
+</script>
+<iframe src="" frameborder="0" name="cnfrm" id="cnfrm" style="display: none;" onload="if(subbmited){window.location='End.html';}"></iframe>
+
 <body>
     <header>
         <div id="hdlogo">
+
             <img src="BlazeForgeLogod.png" alt="BlazeForgeLogo">
             <div>
-                <h1 style="color:white;letter-spacing: 2px;line-height:25px;">BLAZ</h2>
+                <h1 style="color:white;letter-spacing: 1px;line-height:25px;">BLAZ</h2>
                 <h1 style="color:#ffde59">FORG</h2>
             </div>
                 <h1 style="color:#ffde59;font-size:70px;padding-bottom:5px;">E</h2>
         </div>
-
-        <h2 style="color: white;">Demo Class</h2>
+        <div style="margin-right: 10px;line-height: 24px;">
+            <h2 style="color:#ffde59;letter-spacing: 1px;">Demo </h2>
+            <h2 style="color: white;letter-spacing: 3px;">Class</h2>
+        </div>
     </header>
 
     
     <main>
-        <form action="" method="post">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdtS0-8ObgmdPmQaxGi7-bAqWRcbLIK7VsUlVHzNvHUNAVxNw/formResponse" method="post" target="cnfrm" onsubmit="subbmited=true">
             <div class="form">
                 <label for="">Name: </label>
-                <input class="input" placeholder="Full Name" required="1" type="text">
+                <input class="input" placeholder="Full Name" required="1" type="text" name="entry.645356958">
                 <span class="input-border"></span>
             </div>
             <div class="form">
                 <label for="">Email: </label>
-                <input class="input" placeholder="abc@email.com" required="1" type="email">
+                <input class="input" placeholder="abc@email.com" required="1" type="email" name="entry.612888622">
                 <span class="input-border"></span>
             </div>
             <div class="form">
                 <label for="">Phone No.: </label>
-                <input class="input" placeholder="+91 XX XXXX XXXX" required="1" type="tel" maxlength="10" minlength="10">
+                <input class="input" placeholder="+91 XX XXXX XXXX" required="1" type="tel" maxlength="10" minlength="10" name="entry.630828771">
                 <span class="input-border"></span>
             </div>
             <div class="form">
                 <label for="">Collage / School: </label>
-                <input class="input" placeholder="Institution name" required="1" type="text" list="batch">
+                <input class="input" placeholder="Institution name" required="1" type="text" list="batch" name="entry.1732183762">
                 <span class="input-border"></span>
             </div>
             <div class="form">
-                <label for="">Cource: </label>
-                <input class="input" placeholder="Select Cource" required="1" type="text" list="cource">
+                <label for="">Course: </label>
+                <input class="input" placeholder="Select Course" required="1" type="text" list="cource" name="entry.961395769">
                 <span class="input-border"></span>
             </div>
             <datalist id="cource">
@@ -59,15 +78,15 @@
             </datalist>
             <div class="form">
                 <label for="">Semester: </label>
-                <input class="input" placeholder="Enter Sem" required="1" type="text" list="batch">
+                <input class="input" placeholder="Enter Sem" required="1" type="number" name="entry.62621715">
                 <span class="input-border"></span>
             </div>
-            <button class="j" type="submit" >Submit</button>
+            <button class="j" type="submit">Submit</button>
         </form>
     </main>
 
-    <footer>
-
+    <footer style="background-color: #03112b; text-align: center; color: white; padding-block: 7px;">
+        #DEVLOPED IN INDIA
     </footer>
 </body>
 </html>
