@@ -127,7 +127,7 @@ label{
    a{
     text-decoration: none;
    }
-   button:disabled{
+   button{
     color: black;
    }
 
@@ -153,7 +153,22 @@ label{
 }
 
 @media screen and (max-width: 500px) {
+    header img{
+        height: 105px;
+        width: 80px;
+        object-fit: cover;
+    }
+    header > div > div > h1{
+        font-size: larger;
+    }
+    header > div  > h1{
+        font-size: 55px !important;
+    }
 
+    header h2{
+        font-size:large ;
+        line-height: normal;
+    }
     form{
       width: 90%;
   }
