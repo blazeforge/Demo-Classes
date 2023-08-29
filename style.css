@@ -130,6 +130,9 @@ label{
    button{
     color: black;
    }
+   button:disabled{
+    background-color: gray;
+   }
 
  @media screen and (max-width: 900px) {
     .form{
@@ -172,4 +175,13 @@ label{
     form{
       width: 90%;
   }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type=number] {
+    appearance: textfeild;
+    -moz-appearance: textfield;
   }
