@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css" />
 
-    <link rel="shortcut icon" href="BlazeForgeLogod.png" type="image/x-icon"  media="(prefers-color-scheme: dark)">
-    <link rel="shortcut icon" href="BlazeForgeLogol.png" type="image/x-icon"  media="(prefers-color-scheme: light)">
+		<link
+			rel="shortcut icon"
+			href="BlazeForgeLogod.png"
+			type="image/x-icon"
+			media="(prefers-color-scheme: dark)"
+		/>
+		<link
+			rel="shortcut icon"
+			href="BlazeForgeLogol.png"
+			type="image/x-icon"
+			media="(prefers-color-scheme: light)"
+		/>
 
+		<title>Demo Classes</title>
+	</head>
 
-    <title>Demo Classes</title>
-</head>
-
-<!--https://docs.google.com/forms/d/e/1FAIpQLSdtS0-8ObgmdPmQaxGi7-bAqWRcbLIK7VsUlVHzNvHUNAVxNw/viewform
+	<!--https://docs.google.com/forms/d/e/1FAIpQLSdtS0-8ObgmdPmQaxGi7-bAqWRcbLIK7VsUlVHzNvHUNAVxNw/viewform
     ?usp=pp_url&
     entry.645356958=Kunal&
     entry.612888622=email@xyz.com&
@@ -23,75 +32,143 @@
     entry.62621715=1
 -->
 
-<script>
-    var subbmited=false;
-    console.log("Kunal Upadhyay");
-</script>
-<iframe src="" frameborder="0" name="cnfrm" id="cnfrm" style="display: none;" onload="if(subbmited){window.location='End.html';}"></iframe>
+	<script>
+		var subbmited = false;
+	</script>
+	<iframe
+		src=""
+		frameborder="0"
+		name="cnfrm"
+		id="cnfrm"
+		style="display: none"
+		onload="if(subbmited){window.location='End.html';}"
+	></iframe>
 
-<body>
-    <header>
-        <div id="hdlogo">
+	<body>
+		<header>
+			<div id="hdlogo">
+				<img src="BlazeForgeLogod.png" alt="BlazeForgeLogo" />
+				<div>
+					<h1
+						style="
+							color: white;
+							letter-spacing: 1px;
+							line-height: 25px;
+						"
+					>
+						BLAZ
+					</h1>
+					<h1 style="color: #ffde59">FORG</h1>
+				</div>
+				<h1
+					style="color: #ffde59; font-size: 70px; padding-bottom: 4px"
+				>
+					E
+				</h1>
+			</div>
+			<div style="margin-right: 10px; line-height: 24px">
+				<h2 style="color: #ffde59; letter-spacing: 1px">Demo</h2>
+				<h2 style="color: white; letter-spacing: 3px">Class</h2>
+			</div>
+		</header>
 
-            <img src="BlazeForgeLogod.png" alt="BlazeForgeLogo">
-            <div>
-                <h1 style="color:white;letter-spacing: 1px;line-height:25px;">BLAZ</h1>
-                <h1 style="color:#ffde59">FORG</h1>
-            </div>
-                <h1 style="color:#ffde59;font-size:70px;padding-bottom:4px;">E</h1>
-        </div>
-        <div style="margin-right: 10px;line-height: 24px;">
-            <h2 style="color:#ffde59;letter-spacing: 1px;">Demo </h2>
-            <h2 style="color: white;letter-spacing: 3px;">Class</h2>
-        </div>
-    </header>
+		<main>
+			<form
+				action="https://docs.google.com/forms/d/e/1FAIpQLSdtS0-8ObgmdPmQaxGi7-bAqWRcbLIK7VsUlVHzNvHUNAVxNw/formResponse"
+				method="post"
+				target="cnfrm"
+				onsubmit="subbmited=true"
+			>
+				<div class="form">
+					<label for="">Name: </label>
+					<input
+						class="input"
+						placeholder="Full Name"
+						required="1"
+						type="text"
+						name="entry.645356958"
+					/>
+					<span class="input-border"></span>
+				</div>
+				<div class="form">
+					<label for="">Email: </label>
+					<input
+						class="input"
+						placeholder="abc@email.com"
+						required="1"
+						type="email"
+						name="entry.612888622"
+					/>
+					<span class="input-border"></span>
+				</div>
+				<div class="form">
+					<label for="">Phone No.: </label>
+					<input
+						class="input"
+						placeholder="+91 XX XXXX XXXX"
+						required="1"
+						type="tel"
+						maxlength="10"
+						minlength="10"
+						name="entry.630828771"
+					/>
+					<span class="input-border"></span>
+				</div>
+				<div class="form">
+					<label for="">College / School: </label>
+					<input
+						class="input"
+						placeholder="Institution name"
+						required="1"
+						type="text"
+						list="batch"
+						name="entry.1732183762"
+					/>
+					<span class="input-border"></span>
+				</div>
+				<div class="form">
+					<label for="">Course: </label>
+					<input
+						class="input"
+						placeholder="Select Course"
+						required="1"
+						type="text"
+						list="cource"
+						name="entry.961395769"
+					/>
+					<span class="input-border"></span>
+				</div>
+				<datalist id="cource">
+					<option value="B.Tech CSE"></option>
+					<option value="BCA"></option>
+					<option value="BSc. IT"></option>
+					<option value="BSc. CS"></option>
+					<option value="Diploma CSE"></option>
+				</datalist>
+				<div class="form">
+					<label for="">Semester: </label>
+					<input
+						class="input"
+						placeholder="Enter Sem"
+						required="1"
+						type="number"
+						name="entry.62621715"
+					/>
+					<span class="input-border"></span>
+				</div>
+				<button class="j" type="submit">Submit</button>
+			</form>
+		</main>
 
-    
-    <main>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdtS0-8ObgmdPmQaxGi7-bAqWRcbLIK7VsUlVHzNvHUNAVxNw/formResponse" method="post" target="cnfrm" onsubmit="subbmited=true">
-            <div class="form">
-                <label for="">Name: </label>
-                <input class="input" placeholder="Full Name" required="1" type="text" name="entry.645356958">
-                <span class="input-border"></span>
-            </div>
-            <div class="form">
-                <label for="">Email: </label>
-                <input class="input" placeholder="abc@email.com" required="1" type="email" name="entry.612888622">
-                <span class="input-border"></span>
-            </div>
-            <div class="form">
-                <label for="">Phone No.: </label>
-                <input class="input" placeholder="+91 XX XXXX XXXX" required="1" type="tel" maxlength="10" minlength="10" name="entry.630828771">
-                <span class="input-border"></span>
-            </div>
-            <div class="form">
-                <label for="">Collage / School: </label>
-                <input class="input" placeholder="Institution name" required="1" type="text" list="batch" name="entry.1732183762">
-                <span class="input-border"></span>
-            </div>
-            <div class="form">
-                <label for="">Course: </label>
-                <input class="input" placeholder="Select Course" required="1" type="text" list="cource" name="entry.961395769">
-                <span class="input-border"></span>
-            </div>
-            <datalist id="cource">
-                <option value="B.Tech CSE"></option>
-                <option value="BCA"></option>
-                <option value="BSc. IT"></option>
-                <option value="BSc. CS"></option>
-                <option value="Diploma CSE"></option>
-            </datalist>
-            <div class="form">
-                <label for="">Semester: </label>
-                <input class="input" placeholder="Enter Sem" required="1" type="number" name="entry.62621715">
-                <span class="input-border"></span>
-            </div>
-            <button class="j" type="submit">Submit</button>
-        </form>
-    </main>
-
-    <footer style="background-color: #03112b; text-align: center; color: white; padding-block: 7px;">
-        #DEVELOPED IN INDIA
-    </footer>
-</body>
+		<footer
+			style="
+				background-color: #03112b;
+				text-align: center;
+				color: white;
+				padding-block: 7px;
+			"
+		>
+			#DEVELOPED IN INDIA
+		</footer>
+	</body>
 </html>
