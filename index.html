@@ -48,7 +48,7 @@
 
     
     <main>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdtS0-8ObgmdPmQaxGi7-bAqWRcbLIK7VsUlVHzNvHUNAVxNw/formResponse" method="post" target="cnfrm" onsubmit="subbmited=true">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdtS0-8ObgmdPmQaxGi7-bAqWRcbLIK7VsUlVHzNvHUNAVxNw/formResponse" method="post" target="cnfrm" onsubmit="subbmited=true" id="myForm">
             <div class="form">
                 <label for="">Name: </label>
                 <input class="input" placeholder="Full Name" required="1" type="text" name="entry.645356958">
@@ -65,7 +65,7 @@
                 <span class="input-border"></span>
             </div>
             <div class="form">
-                <label for="">College / School: </label>
+                <label for="">Collage / School: </label>
                 <input class="input" placeholder="Institution name" required="1" type="text" list="batch" name="entry.1732183762">
                 <span class="input-border"></span>
             </div>
@@ -86,12 +86,34 @@
                 <input class="input" placeholder="Enter Sem" required="1" type="number" name="entry.62621715">
                 <span class="input-border"></span>
             </div>
-            <button class="j" type="submit">Submit</button>
+            <button class="j" type="submit" id="sub" onclick="go()">Submit</button>
         </form>
+        <div id="wait">
+            <h2>
+                Submitting 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle fill="#FFFFFF" stroke="#FFFFFF" stroke-width="7" r="15" cx="35" cy="100"><animate attributeName="cx" calcMode="spline" dur="1.5" values="35;165;165;35;35" keySplines="0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1" repeatCount="indefinite" begin="0"></animate></circle><circle fill="#FFFFFF" stroke="#FFFFFF" stroke-width="7" opacity=".8" r="15" cx="35" cy="100"><animate attributeName="cx" calcMode="spline" dur="1.5" values="35;165;165;35;35" keySplines="0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1" repeatCount="indefinite" begin="0.05"></animate></circle><circle fill="#FFFFFF" stroke="#FFFFFF" stroke-width="7" opacity=".6" r="15" cx="35" cy="100"><animate attributeName="cx" calcMode="spline" dur="1.5" values="35;165;165;35;35" keySplines="0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1" repeatCount="indefinite" begin=".1"></animate></circle><circle fill="#FFFFFF" stroke="#FFFFFF" stroke-width="7" opacity=".4" r="15" cx="35" cy="100"><animate attributeName="cx" calcMode="spline" dur="1.5" values="35;165;165;35;35" keySplines="0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1" repeatCount="indefinite" begin=".15"></animate></circle><circle fill="#FFFFFF" stroke="#FFFFFF" stroke-width="7" opacity=".2" r="15" cx="35" cy="100"><animate attributeName="cx" calcMode="spline" dur="1.5" values="35;165;165;35;35" keySplines="0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1" repeatCount="indefinite" begin=".2"></animate></circle></svg>
+            </h2>                
+        </div>
     </main>
 
     <footer style="background-color: #03112b; text-align: center; color: white; padding-block: 7px;">
         #DEVELOPED IN INDIA
     </footer>
 </body>
+<script>
+    var wait = document.getElementById("wait");
+    var body = document.getElementsByTagName("body")[0];
+    const form = document.getElementById('myForm');
+    function go(){
+        if (form.reportValidity()) {
+            console.log('Form is valid');
+            document.getElementById("myForm").submit();
+            body.style.overflow="hidden";
+            wait.style.display="flex"; 
+        } 
+        else {
+            console.log('Form is not valid');
+        }
+    }
+</script>
 </html>
