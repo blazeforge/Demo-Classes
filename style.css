@@ -23,14 +23,9 @@ header{
     z-index: 2;
 }
 header img{
-    height: 125px;
-    width: 100px;
-    object-fit: cover;
-}
-#hdlogo{
-    display:flex;
-    align-items:center;
-    margin-left: 10px;
+    padding-left: 20px;
+    height: 97.66px;
+    width: 195.31px;
 }
 header h1,h2{
     font-family: 'Montserrat', sans-serif;
@@ -156,11 +151,6 @@ label{
 }
 
 @media screen and (max-width: 500px) {
-    header img{
-        height: 105px;
-        width: 80px;
-        object-fit: cover;
-    }
     header > div > div > h1{
         font-size: larger;
     }
